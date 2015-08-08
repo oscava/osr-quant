@@ -25,6 +25,6 @@
   "readmeFile": "README.md",
   "homepage": "https://github.com/oscava/osr-quant#readme",
   "dependencies": {
-    "osr-cluster": "~0.1.5"
+    "osr-cluster": "~0.1.6"
   }
 }
