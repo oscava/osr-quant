@@ -1,0 +1,30 @@
+{
+  "name": "osr-quant",
+  "version": "0.1.2",
+  "description": "quant",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscava/osr-quant.git"
+  },
+  "keywords": [
+    "quant",
+    "osr"
+  ],
+  "author": "cava.zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscava/osr-quant/issues"
+  },
+  "readmeFile": "README.md",
+  "homepage": "https://github.com/oscava/osr-quant#readme",
+  "dependencies": {
+    "osr-cluster": "~0.1.1"
+  }
+}
