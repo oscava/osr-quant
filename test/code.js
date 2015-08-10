@@ -1,5 +1,6 @@
 Quant.Model.extends({
 	nextTick:function( current ){
-		this.log(this.ma(this.hhv("$.close",5),5)(),current.close);
+		var ma5 =  当前.简单移动平均(当前.最高价,5)();
+		this.log(ma5);
 	}
 })
