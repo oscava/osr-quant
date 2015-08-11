@@ -1,6 +1,9 @@
-量化.模型.继承({
-	执行:function( current ){
-		var ma5 =  当前.简单移动平均(最高价,5)();
-		当前.打印(ma5);
-	}
-})
+Quant.Model.extends({
+    nextTick: function (current) {
+        //this.llv("$.close",5)();
+        //this.log(this.slope('$.close',5)(), current.close, current.open);
+        this.log("-->" + this.slope('$.close', 5)()/*,current.close*/);
+        //this.log("-->" + this.sma('$.close', 5,3)()/*,current.close*/);
+        //this.log("++>" + this.mema('$.close', 5,1)()/*,current.close*/);
+    }
+});
