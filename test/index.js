@@ -1,5 +1,5 @@
 var Cluster = require("osr-cluster");
-
+var Quant = require("../");
 var cluster = new Cluster("股指期货");
 
 cluster.on("error",function(processname, message){
