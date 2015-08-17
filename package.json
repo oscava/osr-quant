@@ -1,6 +1,6 @@
 {
   "name": "osr-quant",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "quant",
   "main": "index.js",
   "directories": {
