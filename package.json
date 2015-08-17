@@ -1,6 +1,6 @@
 {
   "name": "osr-quant",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "description": "quant",
   "main": "index.js",
   "directories": {
@@ -17,9 +17,7 @@
     "quant",
     "osr"
   ],
-  "author": {
-    "name": "cava.zhang"
-  },
+  "author": "cava.zhang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oscava/osr-quant/issues"
@@ -29,10 +27,6 @@
   "dependencies": {
     "osr-cluster": "~0.1.8"
   },
-  "readme": "##OSR-QUANT\r\n\r\n###How to use\r\n\tnpm install osr-quant\r\n",
-  "readmeFilename": "README.md",
-  "gitHead": "029a9b74cbcf4b1140ee591a8a172618daafac6b",
-  "_id": "osr-quant@0.1.5",
   "_shasum": "04b8f85eca71bdce2d3e9aa6b48d9a480a4991b6",
   "_from": "osr-quant@*"
 }

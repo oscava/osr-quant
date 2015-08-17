@@ -26,7 +26,11 @@ cluster.on("log",function(processname, message){
 	console.log("[--LOG-]","[ FROM:]",processname,"]",message);
 })
 
-cluster.run("IH1508-1M-RGR",__dirname+"/code.js",{ mqSubscribe: "ZJS-DAY", require:[ __dirname+"/../" ],childMain:[__dirname+"/../"]});
+cluster.on("messages",function(processname, message){
+	console.log("[--MSG-]","[ FROM:]",processname,"]",message);
+})
+
+cluster.run("IH1508-1M-RGR",__dirname+"/code.js",{ mqSubscribe: "ZJS-DAY", require:[ __dirname+"/../" ],childmain:[__dirname+"/../"]});
 // cluster.run("IH1508-2M-RGR",__dirname+"/code.js",{ mqSubscribe: "ZJS-DAY", require:[ __dirname+"/../" ],childMain:[__dirname+"/../"]});
 // cluster.run("IH1508-3M-RGR",__dirname+"/code.js",{ mqSubscribe: "ZJS-DAY", require:[ __dirname+"/../" ],childMain:[__dirname+"/../"]});
 // cluster.run("IH1508-4M-RGR",__dirname+"/code.js",{ mqSubscribe: "ZJS-DAY", require:[ __dirname+"/../" ],childMain:[__dirname+"/../"]});
