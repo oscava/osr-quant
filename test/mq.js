@@ -7,6 +7,7 @@ var data = require("./data");
 setInterval(function(){
 	var temp = data.shift();
 	if(temp){
-		client.publish("ZJS-DAY",JSON.stringify(temp),console.log);
+		// client.publish("ZJS-DAY",JSON.stringify(temp),console.log);
+		client.publish("ZJS-REALTIME-IH1508",JSON.stringify(temp),console.log);
 	}
 },100);
