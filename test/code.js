@@ -5,5 +5,8 @@
 	},
 	执行: function( current ){
 		this.draw("MACLOSE5",this.ma(收盘价,5));
+	},
+	endSub:function(){
+		
 	}
 });
