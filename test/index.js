@@ -45,7 +45,8 @@ var Cluster = require("../").Cluster;
 
 var fs = require("fs");
 
-var cluster = new Cluster({});
+var cluster = new Cluster({
+});
 
 cluster.on("error",function(processname, message){
 	console.log("[-ERROR]","[ FROM:",processname,"]",message);
