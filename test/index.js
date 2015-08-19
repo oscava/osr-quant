@@ -46,6 +46,8 @@ var Cluster = require("../").Cluster;
 var fs = require("fs");
 
 var cluster = new Cluster({
+	host:		"120.24.95.74",
+	port:		6379
 });
 
 cluster.on("error",function(processname, message){
@@ -76,4 +78,7 @@ cluster.on("messages",function(processname, message){
 	console.log("[--MSG-]","[ FROM:]",processname,"]",message);
 })
 
-cluster.run("IH1508-10M-RGR",fs.readFileSync("./code.js").toString());
+cluster.run("IH1508-10M-RGR"+Date.now(),fs.readFileSync("./code.js").toString("utf8"),{
+	host:"120.24.95.74",
+	port:6379
+});
