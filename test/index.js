@@ -78,7 +78,12 @@ cluster.on("messages",function(processname, message){
 	console.log("[--MSG-]","[ FROM:]",processname,"]",message);
 })
 
-cluster.run("IH1508-10M-RGR"+Date.now(),fs.readFileSync("./code.js").toString("utf8"),{
+// cluster.run("IH1508-10M-RGR"+Date.now(),fs.readFileSync("./code.js").toString("utf8"),{
+	// host:"120.24.95.74",
+	// port:6379
+// });
+
+cluster.restart("IH1508-10M-RGR",fs.readFileSync("./code.js").toString("utf8"),{
 	host:"120.24.95.74",
 	port:6379
 });
