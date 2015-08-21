@@ -1,6 +1,6 @@
 {
   "name": "osr-quant",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "quant",
   "main": "index.js",
   "directories": {
@@ -25,7 +25,7 @@
   "readmeFile": "README.md",
   "homepage": "https://github.com/oscava/osr-quant#readme",
   "dependencies": {
-    "osr-cluster": "~0.2.6"
+    "osr-cluster": "~0.2.7"
   },
   "_shasum": "04b8f85eca71bdce2d3e9aa6b48d9a480a4991b6",
   "_from": "osr-quant@*"

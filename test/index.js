@@ -84,6 +84,7 @@ cluster.on("messages",function(processname, message){
 // });
 
 cluster.restart("IH1508-10M-RGR",fs.readFileSync("./code.js").toString("utf8"),{
-	host:"120.24.95.74",
-	port:6379
+	host:"127.0.0.1",
+	port:6379,
+	channel:"ZJS_IC1508_1000"
 });
