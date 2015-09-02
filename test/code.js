@@ -1,9 +1,9 @@
-量化.模型.继承({
-	名字:	"测试案例1",
-	optdata:function( datas ){
-		return datas;
-	},
-	执行: function( current ){
-		this.draw("MACLOSE5",this.ma(收盘价,5));
+Quant.Model.extends({
+	currentTick:function( current ){
+		this.buy(3);
+		this.sell(3);
+		this.close(1,2);
+		this.close(-1,2);
+		this.draw("Name",this.ma("$.close",5),{});
 	}
-});
+})
