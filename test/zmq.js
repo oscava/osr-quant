@@ -2,7 +2,7 @@ var zmq = require("zmq");
 
 var pub = zmq.socket("pub");
 
-pub.bindSync("tcp://127.0.0.1:5112");
+pub.bindSync("tcp://127.0.0.1:2223");
 
 var index = 0;
 
