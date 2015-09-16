@@ -1,5 +1,5 @@
 Quant.Model.extends({
-	currentTick:function( current ){
+	nextTick:function( current ){
 		this.buy(3);
 		this.sell(3);
 		this.close(1,2);
