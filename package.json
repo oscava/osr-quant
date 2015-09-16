@@ -22,6 +22,11 @@
   "bugs": {
     "url": "https://github.com/oscava/osr-quant/issues"
   },
+  "dependencies":{
+	"osr-childprocess":"~0.1.3",
+	"osr-class":"*",
+	"ioredis":"*",
+  }
   "readmeFile": "README.md",
   "homepage": "https://github.com/oscava/osr-quant#readme",
   "_shasum": "04b8f85eca71bdce2d3e9aa6b48d9a480a4991b6",
