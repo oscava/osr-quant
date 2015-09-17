@@ -8,4 +8,4 @@ ocp.on("event",function(type, msg){
 
 ocp.on("sys",function(type,msg){
 	console.log("---+",type,msg);
-})
+});
