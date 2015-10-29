@@ -6,5 +6,5 @@ var index = 0;
 
 setInterval(function(){
 	index += 0.01
-	pub.publish("demo",JSON.stringify({ high : index, low: index, open: index, close: index, volume: index }),console.log);
+	pub.publish("demo",JSON.stringify({ high : index, low: index, open: index, close: index, volume: index, time: Date.now() }),console.log);
 },1000)
