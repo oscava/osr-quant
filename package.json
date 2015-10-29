@@ -1,32 +1,32 @@
 {
   "name": "osr-quant",
-  "version": "0.3.2",
-  "description": "quant",
+  "version": "1.0.6",
+  "description": "[![NPM](https://nodei.co/npm/osr-quant.png?mini=true)](https://nodei.co/npm/osr-quant/)\r ###How to use\r \tnpm install osr-quant",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oscava/osr-quant.git"
   },
   "keywords": [
-    "quant",
-    "osr"
+    "osr",
+    "quant"
   ],
+  "dependencies":{
+	"osr-class":"*",
+	"osr-childprocess":"*",
+	"ioredis":"*",
+	"debug":"*"
+  },
   "author": "cava.zhang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oscava/osr-quant/issues"
   },
-  "readmeFile": "README.md",
-  "homepage": "https://github.com/oscava/osr-quant#readme",
-  "dependencies": {
-    "osr-cluster": "~0.2.7"
-  },
-  "_shasum": "04b8f85eca71bdce2d3e9aa6b48d9a480a4991b6",
-  "_from": "osr-quant@*"
+  "homepage": "https://github.com/oscava/osr-quant#readme"
 }
