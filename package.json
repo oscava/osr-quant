@@ -1,6 +1,6 @@
 {
   "name": "osr-quant",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "[![NPM](https://nodei.co/npm/osr-quant.png?mini=true)](https://nodei.co/npm/osr-quant/)\r ###How to use\r \tnpm install osr-quant",
   "main": "index.js",
   "directories": {
