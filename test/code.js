@@ -1,4 +1,8 @@
 Quant.Model.extends({
+	preCondition:function( current ){
+		console.log(current.time);
+		return false;
+	},
 	nextTick:function( current ){
 		this.buy(3);
 		this.sell(3);
