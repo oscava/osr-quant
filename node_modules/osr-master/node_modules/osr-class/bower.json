@@ -1,0 +1,23 @@
+{
+  "name": "osr-class",
+  "description": "class 4 js",
+  "main": "lib/index.js",
+  "authors": [
+    "cava.zhang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "class",
+    "js"
+  ],
+  "homepage": "https://github.com/oscava/osr-class",
+  "moduleType": [],
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

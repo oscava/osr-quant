@@ -17,16 +17,13 @@
     "osr",
     "quant"
   ],
-  "dependencies":{
-	"osr-class":"*",
-	"osr-childprocess":"*",
-	"ioredis":"*",
-	"debug":"*"
-  },
   "author": "cava.zhang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oscava/osr-quant/issues"
   },
-  "homepage": "https://github.com/oscava/osr-quant#readme"
+  "homepage": "https://github.com/oscava/osr-quant#readme",
+  "dependencies": {
+    "osr-master": "^2.0.4"
+  }
 }
