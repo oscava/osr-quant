@@ -23,5 +23,5 @@ setInterval(function(){
 	var min = Math.min.apply(null,[open,close,high,low]);
 	var max = Math.max.apply(null,[open,close,high,low]);
 	var item = { time:Date.now(), open: open, high: max, low: min, close: close };
-	client.publish("ZJS-CURRENT",JSON.parse(item));
+	client.publish("ZJS-CURRENT",JSON.stringify(item));
 },1000);
