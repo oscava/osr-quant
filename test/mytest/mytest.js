@@ -7,7 +7,9 @@ var abs = function ( express, index ){
     return function(cb){
         if(isFunction(express)){
             // console.log(express._method.())
-            middlewear.bind(_this)(express,index,cb);
+            middlewear.bind(_this)(express,index,function( err, result ){
+                cb( null, Math.abs( result ));
+            });
         }else{
             cb(null, Math.abs(express));
         }
@@ -34,7 +36,7 @@ var middlewear = function(express,index,callback){
 }
 
 co(function *(){
-    var result = yield abs(ma(5,8),1);
+    var result = yield abs(ma(5,-8),1);
     console.log(result);
 }).then(function( msg ){
     console.log("ok",msg);
