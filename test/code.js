@@ -16,6 +16,20 @@
 // log.info(abs_close);
 // log.info("===",yield math.abs( CLOSE ));
 
-var hhv_5 = yield HHV(CLOSE,5);
-var llv_5 = yield LLV(CLOSE,5);
-log.info(hhv_5,"\t",llv_5,"\t",current.close);
+// var hhv_5 = yield HHV(CLOSE,5);
+// var llv_5 = yield LLV(CLOSE,5);
+// var ref_1 = yield REF(CLOSE,1);
+// var ref_close_5 = yield REF(HHV(CLOSE,5),1);
+// log.info(hhv_5,"\t",llv_5,"\t",current.close,"\t",ref_1,"\t",ref_close_5);
+
+// var mema_5 = yield MEMA(CLOSE,5);
+
+// var sma_5 = yield SMA(CLOSE,5,1);
+
+// var cross = yield CROSS(OPEN,CLOSE);
+
+// log.info(current.close,"\t",mema_5,"\t",sma_5,"\t",cross,current.open,current.close);
+
+var slope = yield SLOPE(CLOSE,5);
+
+Log.info(slope);
