@@ -3,6 +3,28 @@
 #include log
 #include math
 
+[condition("buy",
+	[function(){
+		var time = Date.now();
+		return time % 10 == 0;
+	},
+	function(){
+		var time = Date.now();
+		return time % 5 == 0;
+	}]
+)];
+
+[condition("sell",[
+	function(){
+		var time = Date.now();
+		return time % 10 == 0;
+	},
+	function(){
+		var time = Date.now();
+		return time % 3 == 0;
+	}
+])];
+
 // var abs_close = yield math.abs( -(yield math.abs(CLOSE)) );
 
 // log.info(abs_close,current);
@@ -32,4 +54,8 @@
 
 var slope = yield SLOPE(CLOSE,5);
 
-Log.info(slope);
+Me.BUY(1);
+Me.SELL(1);
+Me.CLOSE(1,-1);
+
+// Log.info(slope);
